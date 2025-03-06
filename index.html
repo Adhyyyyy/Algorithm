@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">College Events</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clubs.html">Register for Clubs</a></li>
+                <li><a href="admin-login.html">Admin Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <h1>Upcoming College Events</h1>
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Arts">Arts</option>
+            <option value="Sports">Sports</option>
+            <option value="Techfest">Techfest</option>
+            <option value="Cultural">Cultural</option>
+        </select>
+
+        <div id="eventList" class="event-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

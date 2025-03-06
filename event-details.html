@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="eventName"></h1>
+        <img id="eventImage" class="event-img" alt="Event Image">
+        <p id="eventCategory"></p>
+        <p id="eventDate"></p>
+        
+        <h2>Register for this Event</h2>
+        <form id="registrationForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="button" onclick="registerForEvent()">Register</button>
+        </form>
+        <p id="registrationMessage"></p>
+    </div>
+    
+    <script src="event-details.js"></script>
+</body>
+</html>

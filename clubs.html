@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">College Events</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clubs.html">Register for Clubs</a></li>
+                <li><a href="admin-login.html">Admin Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Register for Clubs</h1>
+        <div id="clubsList"></div>
+        <div id="registrationForm" style="display: none;">
+            <h2>Join Club</h2>
+            <form id="clubRegistrationForm">
+                <input type="hidden" id="clubName">
+                <input type="text" id="userName" placeholder="Your Name" required>
+                <input type="email" id="userEmail" placeholder="Your Email" required>
+                <input type="text" id="userSemester" placeholder="Semester" required>
+                <input type="text" id="userBranch" placeholder="Branch" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="clubs.js"></script>
+</body>
+</html>
